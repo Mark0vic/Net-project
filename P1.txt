@@ -1,0 +1,21 @@
+P1_1	4-switch L2 network split in 2 VLANS; 
+	all passwords are 123;
+	configured VTP for all switches, with SW1 and SW3 as servers
+	enabled SSH on SW1, with password 123
+	enabled port security on Fa0/1 of SW1, with a max of 5 stickied MAC addresses 
+
+P1_2	Enabled inter-VLAN routing with router on a stick network
+	added DHCP for both VLANS   //not all PCs are using DHCP in the file, needs to be enabled per PC
+	added DNS server and hosted webpage on test.site 
+	
+P1_3	enabled routing over EIGRP on domain 10
+
+P1_4	added EIGRP domain 20, with R2 redistributing between the domains
+
+P1_5 	made another network, routed by OSPF with 2 areas, R2O being the ABR
+	set LAN interfaces as passive for OSPF
+
+P1_6	connected OSPF and EIGRP networks
+	enabled PAT on EIGRP ASBR (EIGRP net inside), verified using NAT Debug
+	
+	
